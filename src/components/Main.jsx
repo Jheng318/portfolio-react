@@ -1,4 +1,6 @@
 import Button from "./Button";
+import Contact from "./Contact";
+import Education from "./Education";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
@@ -44,8 +46,10 @@ function Main({ isDark }) {
       </section>
       <Skills />
       <Projects />
-      <section id="education"></section>
-      <section id="contact"></section>
+      <div id="edu-contact">
+        <Education />
+        <Contact />
+      </div>
     </main>
   );
 }

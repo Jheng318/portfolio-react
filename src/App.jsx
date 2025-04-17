@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./App.css";
+import "./App2.css";
 import Main from "./components/Main";
 
 function App() {

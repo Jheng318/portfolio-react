@@ -407,6 +407,8 @@ footer {
   }
   #projects h2 {
     text-align: left;
+    width: 90%;
+    margin: 0 auto;
   }
   #projects .project-items {
     display: flex;
@@ -420,6 +422,14 @@ footer {
     & > .textDiv {
       width: 50%;
       height: auto;
+      text-align: left;
+      & > .body {
+        width: 90%;
+      }
+      & > .tags {
+        width: 100%;
+        margin: unset;
+      }
     }
   }
 }

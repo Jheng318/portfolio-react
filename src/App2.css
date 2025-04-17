@@ -245,7 +245,269 @@ main {
     }
   }
 }
+#projects {
+  padding: 2rem 0;
+  width: 95%;
+  margin: 3rem auto;
+}
 
+#projects > h2 {
+  padding: 0 0 2rem 0;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto 2rem auto;
+  font-size: 2rem;
+}
+
+.project-items {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  background-color: var(--dark-purple);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.project-items > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  order: 1;
+}
+
+.project-items > .textDiv {
+  background-color: var(--dark-purple);
+  padding: 1.5rem;
+  text-align: left;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-items > .textDiv > * {
+  background: none;
+  color: var(--white);
+}
+
+.project-items > .textDiv > .specTitle {
+  font-size: 1.8rem;
+  margin: 0 0 0.8rem 0;
+  line-height: 1.2;
+}
+
+.project-items > .textDiv > .body {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-items > .textDiv > .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  background: none;
+}
+
+.project-items > .textDiv > .tags > .tag {
+  box-sizing: border-box;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.project-items > .textDiv > .tags > .tag * {
+  color: var(--black);
+  background: none;
+}
+
+.project-items > .textDiv > button.btn {
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: 0;
+  background-color: var(--purple);
+}
+#edu-contact {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+#education,
+#contact {
+  padding: 3rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#education h2,
+#contact h2 {
+  font-size: 2rem;
+  text-align: left;
+  width: 90%;
+  color: light-dark(var(--black), var(--white));
+  margin: 0 auto 2rem auto;
+  padding-left: 0;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background-color: gray;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--purple);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: light-dark(var(--black), var(--white));
+  background: none;
+}
+
+.timeline-content .dates {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  margin-bottom: 0.8rem;
+  background: none;
+}
+
+.timeline-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+.timeline-content ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 15px;
+  color: light-dark(var(--black), var(--white));
+  background: none;
+}
+
+.timeline-content ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--purple);
+  font-size: 1rem;
+  background: none;
+}
+
+#contact .form-container {
+  background-color: var(--dark-purple);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+}
+
+#contact form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  background: none;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: var(--white) !important;
+  color: var(--black);
+  outline: none;
+  box-sizing: border-box;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+#contact form textarea {
+  resize: vertical;
+  min-height: 100px;
+  outline: none;
+}
+
+#contact form button.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  width: auto;
+}
+
+#contact .form-container * {
+  background-color: inherit;
+}
+
+#contact .form-container label,
+#contact .form-container button.btn,
+#contact .form-container button.btn * {
+  color: var(--white);
+  background-color: transparent;
+}
+
+#contact form button.btn {
+  background-color: var(--purple) !important;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  background-color: var(--white);
+  color: var(--black);
+}
 footer {
   text-align: center;
   margin: 2rem 0;
@@ -352,6 +614,114 @@ footer {
     order: 2;
     margin: 0;
   }
+  #projects > h2 {
+    margin-bottom: 3rem;
+  }
+
+  .project-items {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 1.5rem;
+  }
+
+  .project-items > img {
+    width: 45%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0.5rem;
+    align-self: center;
+    max-height: 350px;
+  }
+
+  .project-items > .textDiv {
+    width: 55%;
+    padding: 0 0 0 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    order: 2;
+  }
+
+  .project-items > .textDiv > .specTitle {
+    font-size: 2rem;
+  }
+  .project-items > .textDiv > .body {
+    font-size: 1rem;
+  }
+
+  .project-items > .textDiv > .tags {
+    margin-bottom: 2rem;
+  }
+
+  .project-items > .textDiv > button.btn {
+    margin-top: auto;
+    margin-left: 0;
+  }
+
+  .project-items.reverse-layout {
+    flex-direction: row-reverse;
+  }
+  .project-items.reverse-layout > .textDiv {
+    padding: 0 2rem 0 0;
+  }
+  .project-items.reverse-layout > img {
+    order: 2;
+  }
+  .project-items.reverse-layout > .textDiv {
+    order: 1;
+  }
+  #edu-contact {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  #education,
+  #contact {
+    padding: 4rem 0;
+    width: 85%;
+  }
+
+  #education h2,
+  #contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .timeline {
+    padding-left: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .timeline-item::before {
+    left: -30px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .timeline-content .dates {
+    font-size: 1rem;
+  }
+
+  .timeline-content ul li {
+    font-size: 1.1rem;
+    padding-left: 20px;
+  }
+  .timeline-content ul li::before {
+    font-size: 1.1rem;
+  }
+
+  #contact .form-container {
+    padding: 2.5rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #contact form label {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -401,5 +771,20 @@ footer {
         }
       }
     }
+  }
+  .project-items {
+    padding: 2rem;
+  }
+
+  .project-items > img {
+    width: 50%;
+  }
+
+  .project-items > .textDiv {
+    width: 50%;
+    padding: 1rem 0 1rem 3rem;
+  }
+  .project-items.reverse-layout > .textDiv {
+    padding: 1rem 3rem 1rem 0;
   }
 }
