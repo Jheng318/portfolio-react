@@ -1,4 +1,6 @@
 import Button from "./Button";
+import Projects from "./Projects";
+import Skills from "./Skills";
 
 function Main({ isDark }) {
   function handleDown() {
@@ -40,8 +42,8 @@ function Main({ isDark }) {
           go-to way to unwind and recharge after a long day of school.
         </p>
       </section>
-      <section id="skills"></section>
-      <section id="projects"></section>
+      <Skills />
+      <Projects />
       <section id="education"></section>
       <section id="contact"></section>
     </main>

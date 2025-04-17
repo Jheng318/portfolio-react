@@ -1,0 +1,18 @@
+{
+  "title": "Development Skills",
+  "text": "I'm proficient in a variety of front-end and back-end technologies, and I'm always eager to expand my skillset. I enjoy tackling complex development challenges and crafting clean, efficient code. My passion for web development drives me to deliver high-quality, impactful solutions.",
+  "skillsArr": [
+    "logos_html-5.svg",
+    "logos_css-3.svg",
+    "skill-icons_javascript.svg",
+    "devicon_jquery-wordmark.svg",
+    "devicon_vuejs.svg",
+    "logos_react.svg",
+    "devicon_laravel.svg",
+    "material-icon-theme_nodejs.svg",
+    "devicon_express.svg",
+    "simple-icons_mysql.svg",
+    "mdi_bootstrap.svg",
+    "material-symbols_flutter.svg"
+  ]
+}

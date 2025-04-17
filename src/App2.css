@@ -41,9 +41,6 @@ body {
 .dark-mode {
   color-scheme: dark;
 }
-.dark-purple {
-  background-color: var(--dark-purple) !important;
-}
 ul {
   list-style-type: none;
 }
@@ -249,56 +246,6 @@ main {
   }
 }
 
-#projects {
-  text-align: center;
-  & > h2 {
-    padding: 4rem 0;
-  }
-  & .project-items {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    background-color: var(--dark-purple) !important;
-    border-radius: 1rem;
-    & > .textDiv {
-      background-color: var(--dark-purple) !important;
-      border-radius: 1rem;
-      & > .specTitle {
-        font-size: calc(2rem + 4px);
-        width: 90%;
-        margin: 1rem auto;
-      }
-      & > .body {
-        width: 80%;
-        margin: 0 auto;
-        padding-bottom: 2rem;
-      }
-      & > .tags {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--dark-purple) !important;
-        width: 70%;
-        gap: 1rem;
-        margin: 0 auto;
-        & > .tag {
-          box-sizing: border-box;
-          padding: 0.3rem 1rem;
-          border-radius: 5px;
-        }
-      }
-      & > button {
-        margin: 2rem 0;
-      }
-    }
-    & > img {
-      width: 85%;
-      margin-top: 1rem;
-      height: auto;
-      border-radius: 1rem;
-    }
-  }
-}
 footer {
   text-align: center;
   margin: 2rem 0;
@@ -404,23 +351,6 @@ footer {
   #skills #designSkills > .textDiv {
     order: 2;
     margin: 0;
-  }
-  #projects h2 {
-    text-align: left;
-  }
-  #projects .project-items {
-    display: flex;
-    flex-direction: row;
-    & > img {
-      width: 50%;
-      height: auto;
-      margin-top: 0;
-      margin: 2rem;
-    }
-    & > .textDiv {
-      width: 50%;
-      height: auto;
-    }
   }
 }
 
