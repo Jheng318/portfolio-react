@@ -1,8 +1,8 @@
 import { useState } from "react";
 import sun from "../assets/solar_sun-bold.svg";
 import moon from "../assets/solar_moon-bold.svg";
-import logo_light from "logo_light.svg";
-import logo_dark from "logo_dark.svg";
+import logo_light from "../assets/logo_light.svg";
+import logo_dark from "../assets/logo_dark.svg";
 import Button from "./Button";
 
 function Header({ isDark, handleIsDark }) {

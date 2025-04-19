@@ -3,7 +3,7 @@ import Contact from "./Contact";
 import Education from "./Education";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import resume from "/Chan_Jia_Hong_Resume.pdf";
+import resume from "../assets/Chan_Jia_Hong_Resume.pdf";
 
 function Main({ isDark }) {
   function handleDown() {
