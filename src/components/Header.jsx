@@ -1,6 +1,8 @@
 import { useState } from "react";
 import sun from "../assets/solar_sun-bold.svg";
 import moon from "../assets/solar_moon-bold.svg";
+import logo_light from "logo_light.svg";
+import logo_dark from "logo_dark.svg";
 import Button from "./Button";
 
 function Header({ isDark, handleIsDark }) {
@@ -12,11 +14,7 @@ function Header({ isDark, handleIsDark }) {
 
   return (
     <header className={`limit ${isNavOpen ? "nav-state-open" : ""}`}>
-      <img
-        src={isDark ? "/logo_dark.svg" : "/logo_light.svg"}
-        alt="logo"
-        id="logo"
-      />
+      <img src={isDark ? logo_dark : logo_light} alt="logo" id="logo" />
       <div id="navDiv">
         <nav id="nav" className={isNavOpen ? "nav-open" : ""}>
           <ul>
