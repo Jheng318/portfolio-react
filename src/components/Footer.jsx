@@ -1,14 +1,15 @@
 import linkedin from "../assets/mdi_linkedin.svg";
 import github from "../assets/mdi_github.svg";
+//function Footer({ isDark }) {
 function Footer() {
   return (
     <footer>
       <div id="footerDiv">
         <a href="https://www.linkedin.com/in/jia-hong-chan-8b56082ab/">
-          <img src={linkedin} alt="My LinkedIn Profile" />
+          <img src={linkedin} alt="My LinkedIn Profile" className="icons" />
         </a>
         <a href="https://github.com/Jheng318">
-          <img src={github} alt="My GitHub Profile" />
+          <img src={github} alt="My GitHub Profile" className="icons" />
         </a>
       </div>
       <p>© 2024 Jia Hong </p>

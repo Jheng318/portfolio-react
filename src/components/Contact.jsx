@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-function Contact() {
+function Contact({ handleNotify }) {
   const WEB3FORMS_ACCESS_KEY = "51eb1f7c-7973-4bf4-8197-7cd31f08f831";
   const [formData, setFormData] = useState({
     name: "",
@@ -33,6 +33,7 @@ function Contact() {
     });
 
     const result = await response.json();
+    handleNotify();
     console.log(result);
   };
 

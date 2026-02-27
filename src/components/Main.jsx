@@ -3,23 +3,45 @@ import Contact from "./Contact";
 import Education from "./Education";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import resume from "../assets/Chan_Jia_Hong_Resume.pdf";
+import profilePic from "/profile_pic.png";
+import resumePdf from "/Chan_Jia_Hong_Resume.pdf";
+import { ToastContainer, toast } from "react-toastify";
+
+// Used for gihub desktop
+// import profilePic from "./portfolio-react/profile_pic.png";
+// import resumePdf from "./portfolio-react/Chan_Jia_Hong_Resume.pdf";
 
 function Main({ isDark }) {
   function handleDown() {
-    const url = "/portfolio-react/Chan_Jia_Hong_Resume.pdf";
     const link = document.createElement("a");
-    link.href = url;
-    link.download = resume;
+    link.href = resumePdf;
+    link.download = "Chan_Jia_Hong_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
+  function handleNotify() {
+    return toast(
+      "Thanks for reaching out! I’ve received your message and will reply soon.",
+    );
+  }
   return (
     <main className="limit">
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <section id="hero">
         <div id="imgDiv">
-          <img src="/profile_pic.png" alt="profile picture" />
+          <img src={profilePic} alt="profile picture" />
         </div>
         <div id="textDiv">
           <p>
@@ -49,7 +71,7 @@ function Main({ isDark }) {
       <Projects />
       <div id="edu-contact">
         <Education />
-        <Contact />
+        <Contact handleNotify={handleNotify} />
       </div>
     </main>
   );

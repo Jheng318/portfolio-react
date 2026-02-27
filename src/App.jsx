@@ -25,7 +25,7 @@ function App() {
     <>
       <Header isDark={isDark} handleIsDark={handleDark} />
       <Main isDark={isDark} />
-      <Footer />
+      <Footer isDark={isDark} />
     </>
   );
 }
